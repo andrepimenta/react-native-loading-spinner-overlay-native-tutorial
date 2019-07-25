@@ -1,17 +1,14 @@
+
 //
-//  LoadingOverlay.h
-//  ReatNativeLoadingSpinnerOverlayNativeTutorial
+//  BridgeTemplate.h
+//  ReactNativeLoadingSpinnerOverlayNative
 //
-//  Created by Andre Pimenta on 25/07/2019.
+//  Created by Andre Pimenta on 11/07/2019.
 //  Copyright © 2019 Facebook. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "React/RCTBridgeModule.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface LoadingOverlay : NSObject
-
+// Instead of LoadingOverlay put the name of your module
+@interface LoadingOverlay : NSObject <RCTBridgeModule>
 @end
-
-NS_ASSUME_NONNULL_END

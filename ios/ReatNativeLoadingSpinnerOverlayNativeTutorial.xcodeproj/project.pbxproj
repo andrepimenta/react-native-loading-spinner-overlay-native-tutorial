@@ -19,6 +19,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReatNativeLoadingSpinnerOverlayNativeTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReatNativeLoadingSpinnerOverlayNativeTutorialTests.m */; };
+		65B228F722EA058800BBACFD /* LoadingOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B228F622EA058800BBACFD /* LoadingOverlay.m */; };
 		B08436A2478E43C7BE2D6B7C /* libPods-ReatNativeLoadingSpinnerOverlayNativeTutorial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A11959A7A7D566000573A2 /* libPods-ReatNativeLoadingSpinnerOverlayNativeTutorial.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		2D02E4901E0B4A5D006451C7 /* ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED538240F73CA239D837135 /* Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOS/Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		57A11959A7A7D566000573A2 /* libPods-ReatNativeLoadingSpinnerOverlayNativeTutorial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReatNativeLoadingSpinnerOverlayNativeTutorial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B228F522EA058800BBACFD /* LoadingOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingOverlay.h; sourceTree = "<group>"; };
+		65B228F622EA058800BBACFD /* LoadingOverlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingOverlay.m; sourceTree = "<group>"; };
 		6D951AB734D10956D8C29214 /* Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOSTests/Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		70380BF76783053E732CAECB /* Pods-ReatNativeLoadingSpinnerOverlayNativeTutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReatNativeLoadingSpinnerOverlayNativeTutorialTests.debug.xcconfig"; path = "Target Support Files/Pods-ReatNativeLoadingSpinnerOverlayNativeTutorialTests/Pods-ReatNativeLoadingSpinnerOverlayNativeTutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87759CC6D9070D678D785A4F /* Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOS/Pods-ReatNativeLoadingSpinnerOverlayNativeTutorial-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				65B228F522EA058800BBACFD /* LoadingOverlay.h */,
+				65B228F622EA058800BBACFD /* LoadingOverlay.m */,
 			);
 			name = ReatNativeLoadingSpinnerOverlayNativeTutorial;
 			sourceTree = "<group>";
@@ -194,7 +199,6 @@
 				70380BF76783053E732CAECB /* Pods-ReatNativeLoadingSpinnerOverlayNativeTutorialTests.debug.xcconfig */,
 				1C2170ADAC15E7BAEEB8AE4A /* Pods-ReatNativeLoadingSpinnerOverlayNativeTutorialTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -530,6 +534,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				65B228F722EA058800BBACFD /* LoadingOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
