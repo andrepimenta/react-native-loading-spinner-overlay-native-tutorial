@@ -8,8 +8,12 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import android.app.Activity;
 
+import com.kaopiz.kprogresshud.KProgressHUD;
+
 //CHANGE LoadingOverlay WITH THE NAME OF YOUR CHOICE
 public class LoadingOverlay extends ReactContextBaseJavaModule {
+
+	KProgressHUD hud;
 
     public LoadingOverlay(ReactApplicationContext reactContext) {
         super(reactContext);
@@ -24,6 +28,21 @@ public class LoadingOverlay extends ReactContextBaseJavaModule {
     public void toggle(Boolean show) {
 		final Activity activity = getCurrentActivity();
 		//PUT YOUR NATIVE CODE HERE
+
+		if(hud == null){
+			hud = KProgressHUD.create(activity);
+		}
+
+		if(show){
+			hud.setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
+			.setLabel("Please wait")
+			.setAnimationSpeed(2)
+			.setDimAmount(0.1f)
+			.show();
+		}else{
+			hud.dismiss();
+		}
+
 
     }
 }
