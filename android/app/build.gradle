@@ -189,6 +189,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+	implementation 'com.kaopiz:kprogresshud:1.2.0'
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     if (enableHermes) {

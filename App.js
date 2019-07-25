@@ -18,14 +18,10 @@ class App extends Component {
   componentDidMount(){
 	var LoadingOverlay = NativeModules.LoadingOverlay;
 	//Let's show it
-	LoadingOverlay.toggle(true).then(result => {
-		console.log('show', result)
-	})
+	LoadingOverlay.toggle(true)
 	// And let's hide it after 3 seconds
 	setTimeout(()=>{
-		LoadingOverlay.toggle(false).then(result=>{
-			console.log("hide", result)
-		})
+		LoadingOverlay.toggle(false)
 	}, 3000)
   }
 
